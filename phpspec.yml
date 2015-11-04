@@ -4,3 +4,5 @@ suites:
         psr4_prefix: Sworup\ProfanityFilter
         src_path: src
         spec_prefix: spec
+extensions:
+    - PhpSpec\Extension\CodeCoverageExtension
