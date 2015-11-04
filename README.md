@@ -23,7 +23,7 @@ $ composer require sworup/Profanity Filter 2
 
 ``` php
 $profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
-echo $skeleton->clean('Hello, League!', '*');
+echo $profanity_filter->clean('Hello, League!', '*');
 ```
 
 ## Change log
@@ -33,7 +33,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 ## Testing
 
 ``` bash
-$ composer test
+$ phpspec run
 ```
 
 ## Contributing
@@ -53,17 +53,17 @@ If you discover any security related issues, please email sworup.shakya@gmail.co
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/league/Profanity Filter 2.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/sworup/profanityfilter.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/thephpleague/Profanity Filter 2/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/thephpleague/Profanity Filter 2.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/thephpleague/Profanity Filter 2.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/league/Profanity Filter 2.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/sworup/profanityfilter/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/sworup/profanityfilter.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/sworup/profanityfilter.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/league/profanityfilter.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/league/Profanity Filter 2
-[link-travis]: https://travis-ci.org/thephpleague/Profanity Filter 2
-[link-scrutinizer]: https://scrutinizer-ci.com/g/thephpleague/Profanity Filter 2/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/thephpleague/Profanity Filter 2
-[link-downloads]: https://packagist.org/packages/league/Profanity Filter 2
+[link-packagist]: https://packagist.org/packages/league/profanityfilter
+[link-travis]: https://travis-ci.org/sworup/profanityfilter
+[link-scrutinizer]: https://scrutinizer-ci.com/g/sworup/profanityfilter/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/sworup/profanityfilter
+[link-downloads]: https://packagist.org/packages/league/profanityfilter
 [link-author]: https://github.com/sworup
 [link-contributors]: ../../contributors
