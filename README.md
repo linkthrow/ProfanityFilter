@@ -21,6 +21,15 @@ Via Composer
 $ composer require sworup/profanityfilter
 ```
 
+###Laravel
+Add ```'Sworup\ProfanityFilter\ProfanityServiceProvider'``` to your providers array.
+
+If you wish to use the Facade then add 
+```'Profanity'         => 'Sworup\ProfanityFilter\Profanity'```
+
+The package will automatically use the config file containing the list of banned words. 
+
+
 ## Usage
 
 ``` php
