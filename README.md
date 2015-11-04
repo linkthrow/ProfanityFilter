@@ -9,6 +9,8 @@
 
 Profanity Filter takes strings as input and removes any bad curse words that the string might have. It check the string for specific blacklist which must match as a sperate word to be considered as a curse word. If a curse word is found, then it will replace the curse word with a censor character the user chooses (default is *).
 
+This package is intended to used with Laravel. Tested and working with laravel 5.1.
+
 ## Install
 
 Via Composer
@@ -20,7 +22,7 @@ $ composer require sworup/Profanity Filter 2
 ## Usage
 
 ``` php
-$skeleton = new sworup\ProfanityFilter();
+$profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
 echo $skeleton->clean('Hello, League!', '*');
 ```
 
