@@ -2,7 +2,7 @@
     "name": "sworup/profanityfilter",
     "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments.",
     "keywords": [
-        "sworup",
+        "laravel",
         "swear word",
         "curse words",
         "remove profanity",
