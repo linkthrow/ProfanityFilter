@@ -23,7 +23,7 @@ $ composer require sworup/Profanity Filter 2
 
 ``` php
 $profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
-echo $profanity_filter->clean('Hello, League!', '*');
+echo $profanity_filter->clean('Hello, sworup!', '*');
 ```
 
 ## Change log
@@ -58,12 +58,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-travis]: https://img.shields.io/travis/sworup/profanityfilter/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/sworup/profanityfilter.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/sworup/profanityfilter.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/league/profanityfilter.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/sworup/profanityfilter.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/league/profanityfilter
+[link-packagist]: https://packagist.org/packages/sworup/profanityfilter
 [link-travis]: https://travis-ci.org/sworup/profanityfilter
 [link-scrutinizer]: https://scrutinizer-ci.com/g/sworup/profanityfilter/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/sworup/profanityfilter
-[link-downloads]: https://packagist.org/packages/league/profanityfilter
+[link-downloads]: https://packagist.org/packages/sworup/profanityfilter
 [link-author]: https://github.com/sworup
 [link-contributors]: ../../contributors
