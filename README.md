@@ -35,7 +35,7 @@ echo $profanity_filter->clean('Dog, puppy badpuppy!', '*');
 
 The above code would return:
 
-***, ***** badpuppy!
+"***, ***** badpuppy!"
 
 
 ## Change log
