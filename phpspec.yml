@@ -4,12 +4,3 @@ suites:
         psr4_prefix: Sworup\ProfanityFilter
         src_path: src
         spec_prefix: spec
-extensions:
-    - PhpSpec\Extension\CodeCoverageExtension
-code_coverage:
-    format:
-        - html
-        - clover
-    output:
-        html: coverage
-        clover: coverage.xml
