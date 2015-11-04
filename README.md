@@ -7,8 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+Profanity Filter takes strings as input and removes any bad curse words that the string might have. It check the string for specific blacklist which must match as a sperate word to be considered as a curse word. If a curse word is found, then it will replace the curse word with a censor character the user chooses (default is *).
 
 ## Install
 
@@ -21,8 +20,8 @@ $ composer require sworup/Profanity Filter 2
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+$skeleton = new sworup\ProfanityFilter();
+echo $skeleton->clean('Hello, League!', '*');
 ```
 
 ## Change log
