@@ -29,13 +29,13 @@ $blacklist  = ['puppy'];
 $replace    = ['a' => '(a|a\.|a\-|4|@|Á|á|À|Â|à|Â|â|Ä|ä|Ã|ã|Å|å|α|Δ|Λ|λ)'];
 
 $profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
-echo $profanity_filter->clean('Dog, puppy badpuppy!', '$');
+echo $profanity_filter->clean('Dog, puppy badpuppy baddog!', '$');
 
 ```
 
 The above code would return:
 
-"$$$, $$$$$ badpuppy!"
+"$$$, $$$$$ badpuppy bad$$$!"
 
 
 ## Change log
