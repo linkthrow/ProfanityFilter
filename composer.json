@@ -1,0 +1,44 @@
+{
+    "name": "Sworup/ProfanityFilter",
+    "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments.",
+    "keywords": [
+        "league",
+        "Profanity Filter 2"
+    ],
+    "homepage": "https://github.com/thephpSworup/ProfanityFilter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sworup Shakya",
+            "email": "sworup.shakya@gmail.com",
+            "homepage": "http://sworup.com.np",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sworup\\ProfanityFilter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sworup\\ProfanityFilter\\Test\\": "spec"
+        }
+    },
+    "scripts": {
+        "test": "phpspec"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
