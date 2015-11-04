@@ -11,6 +11,8 @@ Profanity Filter takes strings as input and removes any bad curse words that the
 
 This package is intended to used with Laravel. Tested and working with laravel 5.1.
 
+This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastwebmedia/Profanity-Filter).
+
 ## Install
 
 Via Composer
