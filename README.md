@@ -18,7 +18,7 @@ This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastweb
 Via Composer
 
 ``` bash
-$ composer require sworup/Profanity Filter 2
+$ composer require sworup/profanityfilter
 ```
 
 ## Usage
@@ -35,13 +35,14 @@ echo $profanity_filter->clean('Dog, puppy badpuppy baddog!', '$');
 
 The above code would return:
 
-
+``` php
 array(
     'old_string' => 'Dog, puppy badpuppy baddog!',
     'new_string' => '$$$, $$$$$ badpuppy bad$$$!',
     'clean'      => false
 );
 
+```
 
 ## Change log
 
