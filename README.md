@@ -35,7 +35,12 @@ echo $profanity_filter->clean('Dog, puppy badpuppy baddog!', '$');
 
 The above code would return:
 
-"$$$, $$$$$ badpuppy bad$$$!"
+
+array(
+    'old_string' => 'Dog, puppy badpuppy baddog!',
+    'new_string' => '$$$, $$$$$ badpuppy bad$$$!',
+    'clean'      => false
+);
 
 
 ## Change log
