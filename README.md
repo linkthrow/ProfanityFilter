@@ -11,7 +11,7 @@ Profanity Filter takes strings as input and removes any bad curse words that the
 
 This package is intended to used with Laravel. Tested and working with laravel 5.1.
 
-This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastwebmedia/Profanity-Filter). A major part of its code is taken from there and I added the things that I thought it required.
+This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastwebmedia/Profanity-Filter). A major part of it is taken from there and I added the things that I thought it required.
 
 ## Install
 
@@ -24,9 +24,19 @@ $ composer require sworup/Profanity Filter 2
 ## Usage
 
 ``` php
+$swear_word = ['dog'];
+$blacklist  = ['puppy'];
+$replace    = ['a' => '(a|a\.|a\-|4|@|Á|á|À|Â|à|Â|â|Ä|ä|Ã|ã|Å|å|α|Δ|Λ|λ)'];
+
 $profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
-echo $profanity_filter->clean('Hello, sworup!', '*');
+echo $profanity_filter->clean('Dog, puppy badpuppy!', '*');
+
 ```
+
+The above code would return:
+
+***, ***** badpuppy!
+
 
 ## Change log
 
