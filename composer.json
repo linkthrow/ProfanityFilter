@@ -2,10 +2,14 @@
     "name": "sworup/profanityfilter",
     "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments.",
     "keywords": [
-        "league",
-        "Profanity Filter 2"
+        "sworup",
+        "swear word",
+        "curse words",
+        "remove profanity",
+        "censor",
+        "Profanity Filter"
     ],
-    "homepage": "https://github.com/thephpSworup/ProfanityFilter",
+    "homepage": "https://github.com/Sworup/ProfanityFilter",
     "license": "MIT",
     "authors": [
         {
