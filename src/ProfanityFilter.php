@@ -29,8 +29,9 @@ class ProfanityFilter
     {
         $replace   = $this->replace;
         $badwords  = $this->swearWords;
-        
-        for ($x = 0; $x < count($badwords); $x++) {
+        $total_badwords = count($badwords);
+        $replacement = array();
+        for ($x = 0; $x < $total_badwords; $x++) {
             $replacement[$x] = str_repeat($censorChar, strlen($badwords[$x]));
             $badwords[$x] = '/' . str_ireplace(array_keys($replace), array_values($replace), $badwords[$x]) . '/i';
         }
@@ -41,8 +42,9 @@ class ProfanityFilter
     {
         $blackList = $this->blackList;
         $replace   = $this->replace;
-
-        for($i=0;$i < sizeof($blackList);$i++) {
+        $replacement = array();
+        $total_blacklist = count($blackList);
+        for($i=0;$i < $total_blacklist;$i++) {
             $splitword = str_split($blackList[$i]);
             $first_time_through = true;
             $regex_ready_word = "";
