@@ -24,10 +24,10 @@ $ composer require LinkThrow/profanityfilter
 ```
 
 ###Laravel
-Add ```'LinkThrow\ProfanityFilter\ProfanityServiceProvider'``` to your providers array.
+Add ```LinkThrow\ProfanityFilter\ProfanityFilterServiceProvider::class``` to your providers array.
 
 If you wish to use the Facade then add 
-```'Profanity'         => 'LinkThrow\ProfanityFilter\Profanity'```
+```'Profanity' => LinkThrow\ProfanityFilter\Facades\Profanity::class```
 
 The package will automatically use the config file containing the list of banned words. 
 

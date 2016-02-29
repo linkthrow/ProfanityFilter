@@ -1,6 +1,6 @@
 <?php
 
-namespace LinkThrow\ProfanityFilter;
+namespace LinkThrow\ProfanityFilter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
