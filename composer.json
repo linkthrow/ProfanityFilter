@@ -1,6 +1,6 @@
 {
     "name": "linkthrow/profanityfilter",
-    "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments.",
+    "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments. ",
     "keywords": [
         "laravel",
         "swear word",
