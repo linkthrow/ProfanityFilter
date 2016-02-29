@@ -8,6 +8,9 @@
 
 Profanity Filter takes strings as input and removes any bad curse words that the string might have. It check the string for specific blacklist which must match as a sperate word to be considered as a curse word. If a curse word is found, then it will replace the curse word with a censor character the user chooses (default is *).
 
+Default curse words from Shuttershock list of banned words
+https://github.com/shutterstock/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
+
 This package is intended to used with Laravel. Tested and working with laravel 5.1.
 
 This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastwebmedia/Profanity-Filter). A major part of it is taken from there and I added the things that I thought it required.
