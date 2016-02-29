@@ -1,6 +1,6 @@
 <?php
 
-namespace Sworup\ProfanityFilter;
+namespace LinkThrow\ProfanityFilter;
 
 class ProfanityFilter
 {
@@ -21,7 +21,7 @@ class ProfanityFilter
 
         $newstring = $this->checkForBadWordsAnywhere($string, $censorChar);
         $newstring = $this->checkForBlackListedWords($newstring, $censorChar);
-                
+
         return $this->createOutputObject($string, $newstring);
     }
 
@@ -57,7 +57,7 @@ class ProfanityFilter
                     $regex_ready_word .= "\W*".str_ireplace(array_keys($replace), array_values($replace), $letter);
                 }
             }
-            
+
             $blackList[$i] ="#\b$regex_ready_word\b#i";
         }
         return preg_replace($blackList, $replacement, $string);
@@ -72,5 +72,5 @@ class ProfanityFilter
             );
     }
 
-    
+
 }

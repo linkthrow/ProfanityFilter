@@ -1,5 +1,5 @@
 {
-    "name": "sworup/profanityfilter",
+    "name": "linkthrow/profanityfilter",
     "description": "Profanity filter package would help you censor some of the bad words users put in your posts and/or comments.",
     "keywords": [
         "laravel",
@@ -9,13 +9,13 @@
         "censor",
         "Profanity Filter"
     ],
-    "homepage": "https://github.com/Sworup/ProfanityFilter",
+    "homepage": "https://github.com/linkthrow/ProfanityFilter",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sworup Shakya",
-            "email": "sworup.shakya@gmail.com",
-            "homepage": "http://sworup.com.np",
+            "name": "Hussan Choudhry",
+            "email": "hussan@uselinkthrow.com",
+            "homepage": "https://uselinkthrow.com",
             "role": "Developer"
         }
     ],
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sworup\\ProfanityFilter\\": "src"
+            "LinkThrow\\ProfanityFilter\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sworup\\ProfanityFilter\\Test\\": "spec"
+            "LinkThrow\\ProfanityFilter\\Test\\": "spec"
         }
     },
     "scripts": {

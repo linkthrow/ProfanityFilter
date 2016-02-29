@@ -20,14 +20,14 @@ This code is based on [Fastwebmedia/Profanity-Filter](https://github.com/fastweb
 Via Composer
 
 ``` bash
-$ composer require sworup/profanityfilter
+$ composer require LinkThrow/profanityfilter
 ```
 
 ###Laravel
-Add ```'Sworup\ProfanityFilter\ProfanityServiceProvider'``` to your providers array.
+Add ```'LinkThrow\ProfanityFilter\ProfanityServiceProvider'``` to your providers array.
 
 If you wish to use the Facade then add 
-```'Profanity'         => 'Sworup\ProfanityFilter\Profanity'```
+```'Profanity'         => 'LinkThrow\ProfanityFilter\Profanity'```
 
 The package will automatically use the config file containing the list of banned words. 
 
@@ -39,7 +39,7 @@ $swear_word = ['dog'];
 $blacklist  = ['puppy'];
 $replace    = ['a' => '(a|a\.|a\-|4|@|Á|á|À|Â|à|Â|â|Ä|ä|Ã|ã|Å|å|α|Δ|Λ|λ)'];
 
-$profanity_filter = new sworup\ProfanityFilter($swear_words, $blacklist, $replace);
+$profanity_filter = new LinkThrow\ProfanityFilter($swear_words, $blacklist, $replace);
 echo $profanity_filter->clean('Dog, puppy badpuppy baddog!', '$');
 
 ```
@@ -71,28 +71,28 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email sworup.shakya@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email LinkThrow.shakya@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [Sworup Shakya][link-author]
+- [LinkThrow Shakya][link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/sworup/profanityfilter.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/LinkThrow/profanityfilter.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/sworup/ProfanityFilter/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/sworup/ProfanityFilter.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/sworup/ProfanityFilter.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/sworup/profanityfilter.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/LinkThrow/ProfanityFilter/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/LinkThrow/ProfanityFilter.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/LinkThrow/ProfanityFilter.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/LinkThrow/profanityfilter.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/sworup/profanityfilter
-[link-travis]: https://travis-ci.org/sworup/ProfanityFilter
-[link-scrutinizer]: https://scrutinizer-ci.com/g/sworup/ProfanityFilter/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/sworup/ProfanityFilter
-[link-downloads]: https://packagist.org/packages/sworup/profanityfilter
-[link-author]: https://github.com/sworup
+[link-packagist]: https://packagist.org/packages/LinkThrow/profanityfilter
+[link-travis]: https://travis-ci.org/LinkThrow/ProfanityFilter
+[link-scrutinizer]: https://scrutinizer-ci.com/g/LinkThrow/ProfanityFilter/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/LinkThrow/ProfanityFilter
+[link-downloads]: https://packagist.org/packages/LinkThrow/profanityfilter
+[link-author]: https://github.com/LinkThrow
 [link-contributors]: ../../contributors
